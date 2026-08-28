@@ -60,6 +60,58 @@
     <tr><td>Willy's rock</td><td>Walking</td></tr>
   </tbody>
 </table>
+<fieldset>
+    <legend>Recommend place</legend>
+
+    <label 
+        for="place-name">Place name in boracay 3 option</label>
+    <input type="text" id="place-name" name="place-name" required>
+
+    <label 
+        for="place-category">Category
+    </label>
+    <select id="place-category" name="place-category" required>
+      <option value="">Choose one</option>
+      <option value="Attraction">Attraction</option>
+      <option value="beaches">beaches</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label 
+       for="place-location">Location (city, area, or address)
+    </label>
+    <input type="text" id="place-location" name="place-location" required>
+
+    <label  
+        for="place-visited">How many times have you visited?
+    </label>
+    <input type="number" id="place-visited" name="place-visited" min="1" max="20">
+
+    <fieldset>
+      <legend>Why should it be added?</legend>
+
+      <input type="checkbox" id="reason-hidden-gem" name="reasons" value="hidden-gem">
+      <label for="hidden-gem">Hidden GEM</label>
+
+      <input type="checkbox" id="reason-great-value" name="reasons" value="Great value">
+      <label for="value">Great value</label>
+
+      <input type="checkbox" id="reason-unique" name="reasons" value="unique-experience">
+      <label for="unique">Unique place</label>
+</fieldset>
+
+    <label for="place-notes">Tell us more (optional)</label>
+    <textarea id="place-notes" name="place-notes"></textarea>
+
+    <label for="submitter-email">Your email</label>
+    <input type="email" id="submitter-email" name="submitter-email" required>
+
+    <button type="submit">Submit recommendation</button>
+</fieldset>
+</form>
+<label for="email">Contact email</label>
+<input type="email" id="email" name="email" required>
+
     <section>
         <h2>This is the hub to enter the other links.</h2>
         <p>
