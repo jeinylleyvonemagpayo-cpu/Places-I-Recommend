@@ -1,24 +1,22 @@
-
-   :root {
+:root {
   --brand-color: #2f6fed;
   --ink-color: #1a1a1a;
   --muted-grey: #6b6b6b;
   --light-bg: #f5f6fa;
- 
+
   --font-heading: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
- 
+
   --radius: 4px;
 }
+
 *,
 *::before,
-*::after 
- { 
-   box-sizing: border-box;
- }
+*::after {
+  box-sizing: border-box;
+}
 
-body 
-{
+body {
   margin: 0;
   font-family: var(--font-body);
   line-height: 1.6;
@@ -26,35 +24,30 @@ body
   background-color: var(--light-bg);
 }
 
-a 
-{
+a {
   color: var(--brand-color);
 }
 
-
-header 
-{
+header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
   padding: 1.25rem 2rem;
+  background-color: var(--muted-grey);
   border-bottom: 2px solid var(--ink-color);
 }
 
-header h1 
-{
+header h1 {
   margin: 0;
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: normal;
-  color: var(--ink-color);
+  color: var(--light-bg);
 }
 
-
-nav ul 
-{
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -62,8 +55,7 @@ nav ul
   gap: 1.75rem;
 }
 
-nav li 
-{
+nav li {
   display: inline-block;
 }
 
@@ -76,37 +68,30 @@ nav a {
 }
 
 nav a:hover,
-nav a:focus-visible 
-{
+nav a:focus-visible {
   border-bottom-color: var(--brand-color);
 }
 
-
-main 
-{
+main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
 }
 
-
-footer 
-{
-  color: var(--muted-grey);
+footer {
+  color: var(--light-bg);
+  background-color: var(--muted-grey);
   text-align: left;
   padding: 1.5rem 2rem;
   margin-top: 3rem;
-  border-top: 1px solid var(--muted-grey);
   font-size: 0.9rem;
 }
 
-footer a 
-{
+footer a {
   color: var(--brand-color);
 }
 
-.place-card 
-{
+.place-card {
   background-color: #ffffff;
   border-left: 4px solid var(--brand-color);
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -114,45 +99,38 @@ footer a
   margin-bottom: 1.5rem;
 }
 
-.place-card img 
-{
+.place-card img {
   width: 100%;
   height: auto;
   margin-bottom: 0.75rem;
 }
 
-.place-card h3 
-{
+.place-card h3 {
   margin: 0 0 0.4rem;
   font-family: var(--font-heading);
   font-size: 1.35rem;
   color: var(--ink-color);
 }
 
-.place-card p 
-{
+.place-card p {
   color: var(--muted-grey);
   margin: 0 0 0.75rem;
 }
 
-.place-card.info 
-{
+.place-card.info {
   color: var(--brand-color);
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-
-fieldset 
-{
+fieldset {
   border: 1px solid var(--muted-grey);
   border-radius: var(--radius);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-legend 
-{
+legend {
   padding: 0 0.5rem;
   font-family: var(--font-heading);
   color: var(--brand-color);
@@ -160,8 +138,7 @@ legend
 }
 
 input,
-textarea 
-{
+textarea {
   padding: 0.6rem 0.75rem;
   margin-bottom: 1rem;
   width: 100%;
@@ -174,15 +151,13 @@ textarea
 }
 
 input:focus,
-textarea:focus 
-{
+textarea:focus {
   outline: 3px solid var(--brand-color);
   outline-offset: 2px;
 }
 
 button[type="submit"],
-input[type="submit"] 
-{
+input[type="submit"] {
   background-color: var(--brand-color);
   color: var(--light-bg);
   padding: 0.75rem 1.5rem;
@@ -193,14 +168,12 @@ input[type="submit"]
 }
 
 button[type="submit"]:hover,
-input[type="submit"]:hover 
-{
+input[type="submit"]:hover {
   filter: brightness(0.9);
 }
 
 button[type="submit"]:focus,
-input[type="submit"]:focus 
-{
+input[type="submit"]:focus {
   outline: 3px solid var(--ink-color);
   outline-offset: 2px;
 }
