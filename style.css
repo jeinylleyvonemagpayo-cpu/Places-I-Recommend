@@ -10,6 +10,41 @@
   --radius: 4px;
 }
 
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "masthead"
+    "main"
+    "side"
+    "foot";
+  gap: 16px;
+}
+
+
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead"
+      "side main"
+      "foot";
+  }
+}
+
+header { grid-area: masthead; }
+aside  { grid-area: side; }
+main   { grid-area: main; }
+footer { grid-area: foot; }
+
+aside {
+  background-color: #ffffff;
+  border-left: 4px solid var(--brand-color);
+  padding: 1rem;
+  text-align: left;
+}
+
 *,
 *::before,
 *::after {
@@ -52,6 +87,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.75rem;
 }
 
@@ -73,6 +109,9 @@ nav a:focus-visible {
 }
 
 main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
@@ -95,11 +134,15 @@ footer a {
   color: var(--brand-color);
 }
 
-section {
+section,
+article {
+  flex: 1 1 240px;
+  background-color: #ffffff;
+  border-left: 4px solid var(--brand-color);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 16px;
+  margin-bottom: 1.5rem;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
 }
 
 section h2 {
@@ -107,17 +150,8 @@ section h2 {
   color: var(--ink-color);
 }
 
-article {
-  background-color: #ffffff;
-  border-left: 4px solid var(--brand-color);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  padding: 16px;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  flex: 1 1 240px;
-}
-
-article img {
+article img,
+section img {
   max-width: 240px;
   width: 100%;
   height: auto;
