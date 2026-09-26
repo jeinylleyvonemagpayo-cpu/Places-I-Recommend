@@ -27,9 +27,9 @@
   .page {
     grid-template-columns: 220px 1fr;
     grid-template-areas:
-      "masthead"
-      "side main"
-      "foot";
+      "masthead masthead"
+      "side  main"
+      "foot  foot";
   }
 }
 
