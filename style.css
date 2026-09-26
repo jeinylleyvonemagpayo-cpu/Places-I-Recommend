@@ -3,13 +3,10 @@
   --ink-color: #1a1a1a;
   --muted-grey: #6b6b6b;
   --light-bg: #f5f6fa;
-
   --font-heading: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-
   --radius: 4px;
 }
-
 
 .page {
   display: grid;
@@ -21,7 +18,6 @@
     "foot";
   gap: 16px;
 }
-
 
 @media (min-width: 700px) {
   .page {
