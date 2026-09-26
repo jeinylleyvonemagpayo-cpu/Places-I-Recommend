@@ -3,10 +3,13 @@
   --ink-color: #1a1a1a;
   --muted-grey: #6b6b6b;
   --light-bg: #f5f6fa;
+
   --font-heading: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
   --radius: 4px;
 }
+
 
 .page {
   display: grid;
@@ -19,13 +22,14 @@
   gap: 16px;
 }
 
+
 @media (min-width: 700px) {
   .page {
     grid-template-columns: 220px 1fr;
     grid-template-areas:
       "masthead masthead"
-      "side  main"
-      "foot  foot";
+      "side     main"
+      "foot     foot";
   }
 }
 
@@ -87,10 +91,6 @@ nav ul {
   gap: 1.75rem;
 }
 
-nav li {
-  display: inline-block;
-}
-
 nav a {
   text-decoration: none;
   color: var(--ink-color);
@@ -146,8 +146,7 @@ section h2 {
   color: var(--ink-color);
 }
 
-article img,
-section img {
+article img {
   max-width: 240px;
   width: 100%;
   height: auto;
